@@ -1,0 +1,125 @@
+.slick-arrow span {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-style: solid;
+  transition: 0.3s;
+  font-size: 0;
+  border-width: 2px 2px 0 0 !important;
+  padding: 2px !important;
+  border-color: #062360 !important;
+}
+
+.slick-next,
+.slick-prev {
+  font-size: 0;
+  line-height: 0;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: 0;
+  background: 0 0;
+  background-color: #efefef !important;
+}
+.slick-prev {
+  position: absolute;
+  top: -1rem;
+  right: 8rem;
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border: 0;
+  width: 24px;
+  color: #062360;
+  font-size: 12px;
+  padding: 5px 0;
+  height: 25px;
+  z-index: 1;
+}
+.slick-next {
+  position: absolute;
+  top: -1rem;
+  right: 6.5rem;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
+  border: 0;
+  width: 24px;
+  color: #062360;
+  font-size: 12px;
+  padding: 5px 0;
+  height: 25px;
+  z-index: 1;
+}
+.slick-prev span {
+  transform: translate(-50%, -50%) rotate(-135deg);
+  margin-left: 2.45px;
+}
+.slick-next span {
+  transform: translate(-50%, -50%) rotate(45deg);
+  margin-left: -2.45px;
+}
+
+.slick-dots {
+  bottom: -25px;
+  width: 100%;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+}
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: block;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  cursor: pointer;
+  color: transparent;
+  border: 0;
+  outline: 0;
+  background: 0 0;
+}
+.slick-dots li button:focus,
+.slick-dots li button:hover {
+  outline: 0;
+}
+.slick-dots li button:focus:before,
+.slick-dots li button:hover:before {
+  opacity: 1;
+}
+.slick-dots li button:before {
+  font-size: 6px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  content: "•";
+  text-align: center;
+  opacity: 0.25;
+  color: #000;
+}
+.slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: #000;
+}
